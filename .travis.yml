@@ -12,4 +12,4 @@ before_install:
   - sudo make install
 script:
   - perl -v
-  - print "Hello, World!"
+  - perl test.pl
