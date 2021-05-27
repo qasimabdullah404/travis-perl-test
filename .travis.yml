@@ -7,9 +7,9 @@ before_install:
   - tar -xzf perl-5.32.1.tar.gz
   - cd perl-5.32.1
   - ./Configure -de
-  - make
-  - make test
-  - make install
+  - sudo make
+  - sudo make test
+  - sudo make install
 script:
   - perl -v
   - print "Hello, World!"
