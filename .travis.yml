@@ -2,7 +2,7 @@ os: linux
 dist: bionic
 language: perl
 perl:
-- 5.32
+- 5.8.3
 
 script:
 - perl -v
