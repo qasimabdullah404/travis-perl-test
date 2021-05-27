@@ -1,9 +1,15 @@
 os: linux
 dist: trusty
-language: perl
-perl:
-  - "5.32"
 
+before_install:
+  - cd /opt
+  - wget https://www.cpan.org/src/5.0/perl-5.28.1.tar.gz
+  - tar -xzf perl-5.28.1.tar.gz
+  - cd perl-5.28.1
+  - ./Configure -de
+  - make
+  - make test
+  - make install
 script:
   - perl -v
   - print "Hello, World!"
